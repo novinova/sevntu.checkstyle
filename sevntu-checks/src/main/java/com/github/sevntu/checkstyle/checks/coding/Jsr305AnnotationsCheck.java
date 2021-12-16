@@ -774,7 +774,7 @@ public class Jsr305AnnotationsCheck extends AbstractCheck {
             checkContainsAny(MSG_RETURN_VALUE_WITH_NULLABLE,
                     NullnessAnnotation.NULLABLE);
             checkContainsAll(MSG_CONTRADICTING_RETURN_VALUE_ANNOTATIONS, NullnessAnnotation.NONNULL,
-                    NullnessAnnotation.CHECK_FOR_NULL);
+                    NullnessAnnotation.CHECK_FOR_NULL, NullnessAnnotation.NULLABLE);
             checkContainsAll(MSG_OVERRIDDEN_METHOD_WITH_CHECK_RETURN_VALUE,
                     NullnessAnnotation.CHECK_RETURN_VALUE, NullnessAnnotation.OVERRIDE);
             checkRedundancyDueToClassLevelAnnotation(MSG_REDUNDANT_NONNULL_BY_DEFAULT_ANNOTATION,
